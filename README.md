@@ -11,7 +11,7 @@ Data jobs in the US are very common. So I want to highlight the most popular job
  5. Plot final findings
 
 View my notebook with details steps here:
-[2_Skill_Demand.ipynb](Project\2_Skill_Demand.ipynb)
+[2_Skill_Demand.ipynb](Project\2_Skill_Demand.ipyn)
 
 ### Data Visualization
 ```python
@@ -39,7 +39,7 @@ fig.tight_layout()
 ```
 ### Result
 
-![Visualization of Top Demanded Skills in the US](Project\Plot_images\1_skill_demand_US.png)
+![Visualization of Top Demanded Skills in the US](Project/Plot_images/1_skill_demand_US.png)
 
 ![Visualization of Top Demanded Skills in Vietanm](Project\Plot_images\2_skill_demand_VN.png)
 
