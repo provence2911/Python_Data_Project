@@ -41,7 +41,7 @@ fig.tight_layout()
 
 ![Visualization of Top Demanded Skills in the US](Project/Plot_images/1_skill_demand_US.png)
 
-![Visualization of Top Demanded Skills in Vietanm](Project\Plot_images\2_skill_demand_VN.png)
+![Visualization of Top Demanded Skills in Vietanm](Project/Plot_images/2_skill_demand_VN.png)
 
 ### Insights
 
@@ -80,7 +80,7 @@ ax.yaxis.set_major_formatter(PercentFormatter(decimals=0))
 plt.show()
 ```
 ### Result
-![Trending top skills for Data Analysts in the US](Project\Plot_images\3_trend_of_skill.png)
+![Trending top skills for Data Analysts in the US](Project/Plot_images/3_trend_of_skill.png)
 
 *Bar graph visualises the trending top skills for data analyst jobs in the US in 2023.*
 
@@ -105,7 +105,7 @@ plt.xlim(0,600_000)
 ```
 ### Result
 
-![Salary Distribution in the US](Project\Plot_images\4_Salary_Distribution_US.png)
+![Salary Distribution in the US](Project/Plot_images/4_Salary_Distribution_US.png)
 ![Salary Distribution in Vietnam](Project\Plot_images\4.1_Salary_Distribution_VN.png)
 
 ### Insight
