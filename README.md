@@ -106,7 +106,7 @@ plt.xlim(0,600_000)
 ### Result
 
 ![Salary Distribution in the US](Project/Plot_images/4_Salary_Distribution_US.png)
-![Salary Distribution in Vietnam](Project\Plot_images\4.1_Salary_Distribution_VN.png)
+![Salary Distribution in Vietnam](Project/Plot_images/4.1_Salary_Distribution_VN.png)
 
 ### Insight
 
