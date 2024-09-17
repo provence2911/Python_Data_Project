@@ -5,8 +5,8 @@ Data jobs in the US are very common. So I want to highlight the most popular job
 
 ### Methodology
  1. Filter data
- 2. Clean up job_skills column 
- 3. Calculate skill counts, job counts based on job_title_short
+ 2. Clean up `job_skills` column 
+ 3. Calculate skill counts, job counts based on `job_title_short`
  4. Calculate skill percentage
  5. Plot final findings
 
@@ -91,7 +91,7 @@ plt.show()
 * SAS while being the 5th most in-demand skills also indicates a gradual downward trend towards the year end.
 
 
-## 4. How well do jobs and skills pay?
+## 3. How well do jobs and skills pay?
 
 ### Visualization
 
@@ -105,8 +105,9 @@ plt.xlim(0,600_000)
 ```
 ### Result
 
-![Salary Distribution in the US](Project/Plot_images/4_Salary_Distribution_US.png)
-![Salary Distribution in Vietnam](Project/Plot_images/4.1_Salary_Distribution_VN.png)
+![Salary Distribution](Project\Plot_images\4_Salary_Distribution.png)
+
+*Box plot shows the distributions of yearly salary for top data jobs in the US and in Vietnam in 2023*
 
 ### Insight
 
@@ -118,3 +119,58 @@ In the US:
 In Vietnam:
 * The market for data job is small. Data Analyst and Data Engineer are the most popular roles, and the salary also increases with the level of seniority. 
 * Like in the US, Data Engineer roles offer a higher range of salary compared to Data analysts. On the contrary, Data Scientist is not common in Vietnam, and has a lower pay range, just slightly higher than for Machine Learning Engineer.
+
+
+## 4. What are the highest paid skills and top demanded skills and their salaries?
+
+### Visualization
+
+```python
+fig,ax = plt.subplots(2,1)
+
+# Top 10 Highest Paid Skills for Data Analysts
+sns.barplot(df_DA_US_top_pay, x='median', y=df_DA_US_top_pay.index, ax=ax[0], hue='median', palette="dark:#5A9_r")
+
+# Top 10 Most Popular Skills for Data Analysts
+sns.barplot(df_DA_US_top_skill, x='median', y=df_DA_US_top_skill.index, ax=ax[1], hue='median', palette="light:#5A9")
+
+fig.tight_layout(h_pad= 1)
+```
+
+### Result
+
+![Highest Paid and Most Demanded skills](Project\Plot_images\4_Salary_vs_Skill.png)
+
+*Bar chart shows the median yearly salary of the highest paid vs most demanded skills for Data Analyst in the US in 2023*
+
+### Insight
+
+- Top paid skills: Specialized skills like `dplyr`, `bitbucket`, `gitlab` are associated with higher salary which can go up to ~ $200K. This suggests that advanced technical proficiency can increase earning potential.
+- Top popular skills: fundamental skills as `python`, `tableau`, `r`, `sql` are the most 4 skills in demand, even though they might not offer the highest range of salaries.
+- There is a clear distinction between the skills with the highest pay range and the skills with the highest demand. Data analysts who aim at increase their earnings should develop diverse skills in terms of fundamental skills and high paying specialised skills.
+
+
+## 5. What are the optimal skills for data analysts to focus on?
+
+### Visualisation
+
+```python
+from adjustText import adjust_text
+
+sns.scatterplot(df_plot, x = 'skill_percent', y = 'median_salary', hue='technology')
+
+texts = []
+for i, txt in enumerate(df_plot.index):
+    texts.append(plt.text(df_plot['skill_percent'].iloc[i], df_plot['median_salary'].iloc[i],txt, ha='right', va='bottom')) 
+adjust_text(
+    texts,
+    arrowprops = dict(arrowstyle = "->", color = 'grey', lw=1)
+```
+
+### Result
+![Optimal Skills](Project\Plot_images\5_Optimal_skill.png)
+
+### Insight
+- Most of `programming` skills (colored blue) tend to cluster at higher salary levels, indicating that programming expertise might offer higher salary within the data analytic field.
+- `Analyst tools` (colored orange) including Tableau and Power BI are prevalent in job postings and offer competitive salaries. This category not only has good range of salaries but is also versatile across various data tasks.
+- Database skills (colored green) such as SQL server and SQL are associated with some of the highest salaries among data analyst tools. This emphasizes the high demand in data management and manipulation in the industry.
