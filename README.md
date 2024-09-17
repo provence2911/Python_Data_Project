@@ -28,13 +28,6 @@ Below are the questions that I want to answer in this project:
 
 Data jobs in the US are very common. So I want to highlight the most popular jobs and most often required skills for these jobs in this country and have a comparison with the situation in Vietnam. This helps me to focus on skills most important to my job target.
 
-### Methodology
- 1. Filter data
- 2. Clean up `job_skills` column 
- 3. Calculate skill counts, job counts based on `job_title_short`
- 4. Calculate skill percentage
- 5. Plot final findings
-
 View my notebook with details steps here:
 [2_Skill_Demand.ipynb](Project\2_Skill_Demand.ipyn)
 
