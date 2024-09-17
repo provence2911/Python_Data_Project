@@ -1,6 +1,31 @@
+# Overview
+
+Welcome to my analysis of the 2023 data job market, focusing on data analysts roles in the US with some comparision with the job market in Vietnam.
+This project was created to navigate and understand the job market more effectively. It delves into the top paying and top demanded skills to help identify optimal job opportunities for data analysts.
+
+Through a series of Python scripts, I find answers to key questions based on the data source here.
+
+# The Questions
+Below are the questions that I want to answer in this project:
+1. What are the most demanded skills for top 3 most popular data jobs in the US and in Vietnam?
+2. How are in-demand skills trending for Data Analyst in the US?
+3. How well do jobs and skills pay?
+4. What are the optimal skills for data analysts to learn? (high demand and high paying)
+
+# Tools I used
+
+- **Python**: 
+    - Pandas Library
+    - Matplotlib Library
+    - Seaborn Library
+- **Jupyter Notebooks**
+- **Visual Studio Code**
+- **Git & GitHub**
+
 # The Analysis
 
-## 1. What are the most demanded skills for top 3 most popular data jobs in the US and in Vietnam?
+1. What are the most demanded skills for top 3 most popular data jobs in the US and in Vietnam?
+
 Data jobs in the US are very common. So I want to highlight the most popular jobs and most often required skills for these jobs in this country and have a comparison with the situation in Vietnam. This helps me to focus on skills most important to my job target.
 
 ### Methodology
@@ -174,3 +199,9 @@ adjust_text(
 - Most of `programming` skills (colored blue) tend to cluster at higher salary levels, indicating that programming expertise might offer higher salary within the data analytic field.
 - `Analyst tools` (colored orange) including Tableau and Power BI are prevalent in job postings and offer competitive salaries. This category not only has good range of salaries but is also versatile across various data tasks.
 - Database skills (colored green) such as SQL server and SQL are associated with some of the highest salaries among data analyst tools. This emphasizes the high demand in data management and manipulation in the industry.
+
+# Conclusion
+This project provided several general insights into the data analytic job market:
+- **Skill demand and Salary correlation:** There is a clear correlation between for specific skills and the salary offer. Advanced ans specialised skill like Python and SQL often lead to higher salaries.
+- **Market Trend:** There are fluctuations in the skill demands, highlighting a dynamic market. Besides fundamental skills as Excel, SQL, data analysts need to develop other skills like Python, Tableau, R,... for career growth.
+- In Vietnam, the data analytic job market was relatively small. Focusing on learning skills in high demand helps maximize the best career opportunities, not only on site, but also in remote roles.
