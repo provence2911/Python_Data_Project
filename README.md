@@ -164,7 +164,7 @@ fig.tight_layout(h_pad= 1)
 
 ### Result
 
-![Highest Paid and Most Demanded skills](Project\Plot_images\4_Salary_vs_Skill.png)
+![Highest Paid and Most Demanded skills](Project/Plot_images/4_Salary_vs_Skill.png)
 
 *Bar chart shows the median yearly salary of the highest paid vs most demanded skills for Data Analyst in the US in 2023*
 
@@ -193,7 +193,7 @@ adjust_text(
 ```
 
 ### Result
-![Optimal Skills](Project\Plot_images\5_Optimal_skill.png)
+![Optimal Skills](Project/Plot_images/5_Optimal_skill.png)
 
 ### Insight
 - Most of `programming` skills (colored blue) tend to cluster at higher salary levels, indicating that programming expertise might offer higher salary within the data analytic field.
