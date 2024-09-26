@@ -57,9 +57,9 @@ fig.tight_layout()
 ```
 ### Result
 
-![Visualization of Top Demanded Skills in the US](Project/Plot_images/1_skill_demand_US.png)
+![Visualization of Top Demanded Skills in the US](Project_1_Data_Jobs/Plot_images/1_skill_demand_US.png)
 
-![Visualization of Top Demanded Skills in Vietanm](Project/Plot_images/2_skill_demand_VN.png)
+![Visualization of Top Demanded Skills in Vietanm](Project_1_Data_Jobs/Plot_images/2_skill_demand_VN.png)
 
 ### Insights
 
