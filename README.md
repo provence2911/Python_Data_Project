@@ -1,7 +1,7 @@
 # Overview
 
-Welcome to my analysis of the 2023 data job market, focusing on data analysts roles in the US with some comparision with the job market in Vietnam.
-This project was created to navigate and understand the job market more effectively. It delves into the top paying and top demanded skills to help identify optimal job opportunities for data analysts.
+Welcome to my analysis of the 2023 data job market, focusing on data analyst roles in the US with some comparison with the job market in Vietnam.
+This project was created to navigate and understand the job market more effectively. It delves into the top-paying and top-demanded skills to help identify optimal job opportunities for data analysts.
 
 Through a series of Python scripts, I find answers to key questions based on the data source here.
 
@@ -10,7 +10,7 @@ Below are the questions that I want to answer in this project:
 1. What are the most demanded skills for top 3 most popular data jobs in the US and in Vietnam?
 2. How are in-demand skills trending for Data Analyst in the US?
 3. How well do jobs and skills pay?
-4. What are the optimal skills for data analysts to learn? (high demand and high paying)
+4. What are the optimal skills for data analysts to learn? (high demand and high pay)
 
 # Tools I used
 
@@ -24,7 +24,7 @@ Below are the questions that I want to answer in this project:
 
 # The Analysis
 
-1. What are the most demanded skills for top 3 most popular data jobs in the US and in Vietnam?
+1. What are the most demanded skills for Top 3 most popular data jobs in the US and Vietnam?
 
 Data jobs in the US are very common. So I want to highlight the most popular jobs and most often required skills for these jobs in this country and have a comparison with the situation in Vietnam. This helps me to focus on skills most important to my job target.
 
@@ -98,7 +98,7 @@ ax.yaxis.set_major_formatter(PercentFormatter(decimals=0))
 plt.show()
 ```
 ### Result
-![Trending top skills for Data Analysts in the US](Project/Plot_images/3_trend_of_skill.png)
+![Trending top skills for Data Analysts in the US](Project_1_Data_Jobs/Plot_images/3_trend_of_skill.png)
 
 *Bar graph visualises the trending top skills for data analyst jobs in the US in 2023.*
 
@@ -123,20 +123,20 @@ plt.xlim(0,600_000)
 ```
 ### Result
 
-![Salary Distribution](Project\Plot_images\4_Salary_Distribution.png)
+![Salary Distribution](Project_1_Data_Jobs/Plot_images/4_Salary_Distribution.png)
 
 *Box plot shows the distributions of yearly salary for top data jobs in the US and in Vietnam in 2023*
 
 ### Insight
 
 In the US:
-* There are significant variations in salary range across different job titles. Senior Data Scientist roles tend to have the highest salary potential, followed closely by Senior Data Enginner.
-* Senior roles, and roles of Data Scientist and Data Engineer present a considerable number of outliers, suggesting that exceptional skills can lead to very high pay in these roles. Data Analyst seems to have a more consistent pay range, with fewer and closer outliers.
+* There are significant variations in salary range across different job titles. Senior Data Scientist roles tend to have the highest salary potential, followed closely by Senior Data Engineer.
+* Senior roles, and roles of Data Scientist and Data Engineer present many outliers, suggesting that exceptional skills can lead to very high pay in these roles. Data Analyst seems to have a more consistent pay range, with fewer and closer outliers.
 * The median salary also varies depending on level of seniority.
 
 In Vietnam:
 * The market for data job is small. Data Analyst and Data Engineer are the most popular roles, and the salary also increases with the level of seniority. 
-* Like in the US, Data Engineer roles offer a higher range of salary compared to Data analysts. On the contrary, Data Scientist is not common in Vietnam, and has a lower pay range, just slightly higher than for Machine Learning Engineer.
+* Like in the US, Data Engineer roles offer a higher salary range than Data analysts. On the contrary, Data Scientists are not common in Vietnam, and have a lower pay range, just slightly higher than for Machine Learning Engineer.
 
 
 ## 4. What are the highest paid skills and top demanded skills and their salaries?
@@ -157,7 +157,7 @@ fig.tight_layout(h_pad= 1)
 
 ### Result
 
-![Highest Paid and Most Demanded skills](Project/Plot_images/4_Salary_vs_Skill.png)
+![Highest Paid and Most Demanded skills](Project_1_Data_Jobs/Plot_images/4_Salary_vs_Skill.png)
 
 *Bar chart shows the median yearly salary of the highest paid vs most demanded skills for Data Analyst in the US in 2023*
 
@@ -186,15 +186,15 @@ adjust_text(
 ```
 
 ### Result
-![Optimal Skills](Project/Plot_images/5_Optimal_skill.png)
+![Optimal Skills](Project_1_Data_Jobs/Plot_images/5_Optimal_skill.png)
 
 ### Insight
-- Most of `programming` skills (colored blue) tend to cluster at higher salary levels, indicating that programming expertise might offer higher salary within the data analytic field.
-- `Analyst tools` (colored orange) including Tableau and Power BI are prevalent in job postings and offer competitive salaries. This category not only has good range of salaries but is also versatile across various data tasks.
+- Most `programming` skills (colored blue) tend to cluster at higher salary levels, indicating that programming expertise might offer a higher salary within the data analytic field.
+- `Analyst tools` (colored orange) including Tableau and Power BI are prevalent in job postings and offer competitive salaries. This category not only has a good range of salaries but is also versatile across various data tasks.
 - Database skills (colored green) such as SQL server and SQL are associated with some of the highest salaries among data analyst tools. This emphasizes the high demand in data management and manipulation in the industry.
 
 # Conclusion
 This project provided several general insights into the data analytic job market:
-- **Skill demand and Salary correlation:** There is a clear correlation between for specific skills and the salary offer. Advanced ans specialised skill like Python and SQL often lead to higher salaries.
-- **Market Trend:** There are fluctuations in the skill demands, highlighting a dynamic market. Besides fundamental skills as Excel, SQL, data analysts need to develop other skills like Python, Tableau, R,... for career growth.
+- **Skill demand and Salary correlation:** There is a clear correlation between specific skills and the salary offer. Advanced and specialised skill like Python and SQL often lead to higher salaries.
+- **Market Trend:** There are fluctuations in the skill demands, highlighting a dynamic market. Besides fundamental skills such as Excel, SQL, data analysts need to develop other skills like Python, Tableau, R,... for career growth.
 - In Vietnam, the data analytic job market was relatively small. Focusing on learning skills in high demand helps maximize the best career opportunities, not only on site, but also in remote roles.
