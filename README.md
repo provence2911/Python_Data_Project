@@ -28,7 +28,7 @@ Below are the questions that I want to answer in this project:
 
 Data jobs in the US are very common. So I want to highlight the most popular jobs and most often required skills for these jobs in this country and have a comparison with the situation in Vietnam. This helps me to focus on skills most important to my job target.
 
-View my notebook with details steps here:
+View my notebook with detailed steps here:
 [2_Skill_Demand.ipynb](Project\2_Skill_Demand.ipyn)
 
 ### Data Visualization
